@@ -7,10 +7,10 @@ public:
 	static bool				staticInit( void ) noexcept;
 	static void				cleanUp( void ) noexcept;
 
-	static void				reportError( const char* inOperationDesc ) noexcept;
+	static void				reportError( const char* operationDesc ) noexcept;
 	static int				getLastError( void ) noexcept;
 
-	static int				select( const vector< TCPSocketPtr >* inReadSet, 
+	static int				Select( const vector< TCPSocketPtr >* inReadSet, 
 									vector< TCPSocketPtr >* outReadSet,
 									const vector< TCPSocketPtr >* inWriteSet,
 									vector< TCPSocketPtr >* outWriteSet, 
